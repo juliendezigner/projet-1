@@ -156,6 +156,201 @@ tr:last-child td {
 .faction.tyranids  { background: #2a0a2a; color: #d87ad8; border: 1px solid #8a2a8a; }
 .faction.tau       { background: #0a2a2a; color: #7ad8d8; border: 1px solid #2a8a8a; }
 
+/* Combat Patrol Section */
+.patrol-section {
+  margin-bottom: 3rem;
+}
+
+.patrol-section > h2 {
+  font-size: 1.5rem;
+  color: #c8a84b;
+  margin-bottom: 0.6rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.patrol-intro {
+  text-align: center;
+  color: #a08060;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Collapsible patrol */
+.patrol {
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.patrol summary {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  list-style: none;
+  user-select: none;
+  transition: filter 0.2s;
+}
+
+.patrol summary::-webkit-details-marker { display: none; }
+
+.patrol summary:hover { filter: brightness(1.15); }
+
+.patrol-title { flex: 1; }
+
+.patrol-icon { font-size: 1.3rem; }
+
+.patrol-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.3s;
+}
+
+.patrol[open] .patrol-arrow { transform: rotate(180deg); }
+
+.tyranids-patrol summary {
+  background: linear-gradient(135deg, #1a0a2a, #2a1040);
+  border: 1px solid #6a2a8a;
+  color: #d87ad8;
+}
+
+.marines-patrol summary {
+  background: linear-gradient(135deg, #0a1a2a, #102040);
+  border: 1px solid #2a5a9a;
+  color: #7aaad8;
+}
+
+.patrol-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tyranids-patrol .patrol-body { background: #130820; border: 1px solid #3a1050; border-top: none; }
+.marines-patrol  .patrol-body { background: #081420; border: 1px solid #1a3a60; border-top: none; }
+
+/* Detachment rule box */
+.patrol-rule {
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+  border-left: 4px solid;
+}
+
+.tyranids-patrol .patrol-rule { background: #1e0a30; border-color: #8a2a9a; }
+.marines-patrol  .patrol-rule { background: #0a1a30; border-color: #2a5aaa; }
+
+.patrol-rule h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #c8a84b;
+}
+
+.patrol-rule p { color: #c8b090; font-size: 0.92rem; line-height: 1.6; }
+
+.roster-title {
+  font-size: 1rem;
+  color: #c8a84b;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #3d2b1a;
+  padding-bottom: 0.4rem;
+}
+
+/* Unit cards */
+.unit-card {
+  border-radius: 4px;
+  padding: 1.2rem;
+  border: 1px solid;
+}
+
+.tyranids-unit { background: #180828; border-color: #4a1a5a; }
+.marines-unit  { background: #081628; border-color: #1a3a5a; }
+
+.unit-header { margin-bottom: 0.8rem; }
+
+.unit-header h4 {
+  font-size: 1rem;
+  color: #e8d5b0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.unit-role {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+.tyranids-unit .unit-role { background: #3a0a4a; color: #c87ad8; }
+.marines-unit  .unit-role { background: #0a2a4a; color: #7aaad8; }
+
+/* Stat & weapon tables */
+.stat-table, .weapon-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.stat-table th, .weapon-table th {
+  padding: 0.35rem 0.6rem;
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+}
+
+.tyranids-unit .stat-table th,
+.tyranids-unit .weapon-table th { background: #2a0a3a; color: #d87ad8; }
+.marines-unit  .stat-table th,
+.marines-unit  .weapon-table th { background: #0a1a3a; color: #7aaad8; }
+
+.stat-table td, .weapon-table td {
+  padding: 0.35rem 0.6rem;
+  text-align: center;
+  border-bottom: 1px solid #2a1a3a;
+  color: #c8b090;
+}
+
+.weapon-table td:first-child { text-align: left; font-style: italic; }
+
+.stat-table tr:last-child td,
+.weapon-table tr:last-child td { border-bottom: none; }
+
+.invu {
+  font-size: 0.85rem;
+  color: #c8a84b;
+  margin-bottom: 0.5rem;
+}
+
+/* Abilities list */
+.abilities {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.abilities li {
+  font-size: 0.88rem;
+  color: #c8b090;
+  line-height: 1.5;
+  padding-left: 0.8rem;
+  border-left: 2px solid #3d2b1a;
+}
+
+.abilities li strong { color: #e8d5b0; }
+
 /* Footer */
 footer {
   text-align: center;
