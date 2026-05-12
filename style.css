@@ -156,17 +156,18 @@ tr:last-child td {
 .faction.tyranids  { background: #2a0a2a; color: #d87ad8; border: 1px solid #8a2a8a; }
 .faction.tau       { background: #0a2a2a; color: #7ad8d8; border: 1px solid #2a8a8a; }
 
-/* Combat Patrol Section */
-.patrol-section {
-  margin-bottom: 3rem;
+/* Hero patrol area */
+.hero-patrols {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 0 2rem;
 }
 
-.patrol-section > h2 {
-  font-size: 1.5rem;
-  color: #c8a84b;
-  margin-bottom: 0.6rem;
-  letter-spacing: 2px;
-  text-align: center;
+.hero-patrol-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  align-items: start;
 }
 
 .patrol-intro {
@@ -174,7 +175,7 @@ tr:last-child td {
   color: #a08060;
   font-style: italic;
   font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Collapsible patrol */
