@@ -3,16 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet 1</title>
+    <title>Warhammer 40,000 — Core Rules</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Projet 1</h1>
+      <div class="header-content">
+        <h1>⚔️ Warhammer 40,000</h1>
+        <p class="subtitle">Core Rules Quick Reference</p>
+      </div>
     </header>
+
     <main>
-      <p>Welcome to my web app.</p>
+      <section class="intro">
+        <p>In the grim darkness of the far future, there is only war. This page summarises the essential rules to get your battle started.</p>
+      </section>
+
+      <section class="rules-grid">
+
+        <div class="card">
+          <h2>🎲 The Golden Rule</h2>
+          <p>Warhammer 40,000 uses six-sided dice (D6). When a rule says "roll a D6", roll one die. When it says "roll 2D6", roll two dice and add them together.</p>
+          <ul>
+            <li>Roll <strong>equal to or higher</strong> than the target number to succeed</li>
+            <li>A roll of <strong>1 always fails</strong>, a roll of <strong>6 always succeeds</strong> (for most rolls)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>🪖 The Turn Sequence</h2>
+          <ol>
+            <li><strong>Command Phase</strong> — gain Command Points, use Stratagems</li>
+            <li><strong>Movement Phase</strong> — move your units across the battlefield</li>
+            <li><strong>Shooting Phase</strong> — fire ranged weapons at enemy units</li>
+            <li><strong>Charge Phase</strong> — declare and resolve charges</li>
+            <li><strong>Fight Phase</strong> — melee combat, alternating attacks</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h2>🏃 Movement</h2>
+          <p>Each unit has a <strong>Move (M)</strong> characteristic. Models can move up to that distance in inches.</p>
+          <ul>
+            <li><strong>Normal Move</strong> — move up to M inches</li>
+            <li><strong>Advance</strong> — roll a D6 and add to M, but cannot shoot after</li>
+            <li><strong>Fall Back</strong> — disengage from melee, cannot shoot or charge</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>🔫 Shooting</h2>
+          <p>To shoot, pick an eligible unit, select targets, then roll to hit and wound.</p>
+          <ul>
+            <li><strong>Hit Roll</strong> — roll D6 vs. Ballistic Skill (BS)</li>
+            <li><strong>Wound Roll</strong> — compare Strength (S) to Toughness (T)</li>
+            <li><strong>Save Roll</strong> — target rolls vs. Armour Save (Sv)</li>
+            <li><strong>Damage</strong> — subtract remaining damage from Wounds (W)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>⚔️ Melee Combat</h2>
+          <p>In the Fight Phase, units within <strong>Engagement Range (1")</strong> fight.</p>
+          <ul>
+            <li>The player whose turn it is picks first</li>
+            <li><strong>Hit Roll</strong> — roll D6 vs. Weapon Skill (WS)</li>
+            <li>Same wound and save process as shooting</li>
+            <li>Units that charged get to <strong>fight first</strong></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>🛡️ Wound & Save Table</h2>
+          <table>
+            <thead>
+              <tr><th>S vs T</th><th>Wound Roll</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>S ≥ 2× T</td><td>2+</td></tr>
+              <tr><td>S &gt; T</td><td>3+</td></tr>
+              <tr><td>S = T</td><td>4+</td></tr>
+              <tr><td>S &lt; T</td><td>5+</td></tr>
+              <tr><td>S ≤ ½ T</td><td>6+</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+
+      <section class="factions">
+        <h2>Major Factions</h2>
+        <div class="faction-list">
+          <span class="faction imperium">Imperium of Man</span>
+          <span class="faction chaos">Chaos</span>
+          <span class="faction xenos">Xenos</span>
+          <span class="faction necrons">Necrons</span>
+          <span class="faction tyranids">Tyranids</span>
+          <span class="faction tau">T'au Empire</span>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>For full rules, visit the <strong>Warhammer Community</strong> website. This is a fan-made quick reference.</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
