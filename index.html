@@ -17,6 +17,7 @@
         <p class="patrol-intro">Patrouilles de Combat V10 — cliquez pour déployer votre force</p>
         <div class="hero-patrol-grid">
 
+          <!-- ===== TYRANIDES ===== -->
           <details class="patrol tyranids-patrol">
             <summary>
               <span class="patrol-icon">🦟</span>
@@ -27,100 +28,148 @@
 
               <div class="patrol-rule">
                 <h3>Règle de Détachement : Essaim Dévorant</h3>
-                <p>Les unités Tyranides de cette patrouille bénéficient de la règle <strong>Synergie</strong> : tant qu'une unité est à 6" d'une autre unité Tyranide amie, elle peut relancer les jets pour blesser de 1.</p>
+                <p>Les unités Tyranides bénéficient de <strong>Synergie</strong> : à 6" d'une autre unité Tyranide amie, elles peuvent relancer les jets pour blesser de 1. L'Esprit-Ruche guide chaque créature.</p>
               </div>
 
               <h3 class="roster-title">Liste d'Armée</h3>
 
+              <!-- Primat Tyranide Ailé -->
               <div class="unit-card tyranids-unit">
                 <div class="unit-header">
-                  <h4>Parasite de Mortrex <span class="unit-role">QG</span></h4>
+                  <h4>Primat Tyranide Ailé <span class="unit-role">QG</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>12"</td><td>5</td><td>4+</td><td>5</td><td>6+</td><td>1</td></tr></tbody>
-                </table>
-                <p class="invu">Sauvegarde Invulnérable : <strong>5+</strong></p>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Griffes et Serres</td><td>Mêlée</td><td>—</td><td>6</td><td>3+</td><td>5</td><td>-2</td><td>1</td><td>—</td></tr>
-                    <tr><td>Oviposteur Barbelé</td><td>Mêlée</td><td>—</td><td>1</td><td>3+</td><td>6</td><td>-3</td><td>3</td><td>Implantation</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>12"</td><td>9</td><td>2+</td><td>10</td><td>6+</td><td>3</td></tr></tbody>
+                  </table>
+                </div>
+                <p class="invu">Sauvegarde Invulnérable : <strong>4+</strong></p>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Bio-plasma</td><td>12"</td><td>1</td><td>2+</td><td>9</td><td>-3</td><td>D3+3</td><td>Tir</td></tr>
+                      <tr><td>Mâchoires Tyranides</td><td>Mêlée</td><td>3</td><td>2+</td><td>12</td><td>-3</td><td>3</td><td>—</td></tr>
+                      <tr><td>Serres Scythe</td><td>Mêlée</td><td>6</td><td>2+</td><td>7</td><td>-2</td><td>2</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Attaque d'Implantation :</strong> chaque fois que le Parasite tue un modèle INFANTERIE ennemi, placez un pion — à la fin du tour, ce pion est remplacé par une unité Essaim de Rippers dans votre réserve.</li>
-                  <li><strong>Terreur Ailée :</strong> peut déclarer une charge même après avoir Avancé.</li>
-                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve et arriver depuis les bords de la zone de déploiement.</li>
+                  <li><strong>Ombre dans le Warp :</strong> les unités ennemies à 12" subissent -1 à leurs jets de moral et de commandement.</li>
+                  <li><strong>Vol :</strong> peut survoler les unités et les terrains lors de son mouvement.</li>
+                  <li><strong>Synergie Psychique :</strong> peut lancer un pouvoir psychique par tour (Smite de base).</li>
                 </ul>
               </div>
 
+              <!-- Psychophage -->
               <div class="unit-card tyranids-unit">
                 <div class="unit-header">
-                  <h4>Gargoyles <span class="unit-role">TROUPES — 10 figurines</span></h4>
+                  <h4>Psychophage <span class="unit-role">ÉLITES</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>10"</td><td>3</td><td>6+</td><td>1</td><td>8+</td><td>2</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Chair-Perceur</td><td>Tir</td><td>12"</td><td>1</td><td>4+</td><td>5</td><td>0</td><td>1</td><td>—</td></tr>
-                    <tr><td>Venin Aveuglant</td><td>Mêlée</td><td>—</td><td>1</td><td>4+</td><td>3</td><td>0</td><td>1</td><td>—</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>8"</td><td>9</td><td>3+</td><td>10</td><td>8+</td><td>3</td></tr></tbody>
+                  </table>
+                </div>
+                <p class="invu">Sauvegarde Invulnérable : <strong>4+</strong></p>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Nébuliseur Acide</td><td>12"</td><td>2D6</td><td>—</td><td>5</td><td>-1</td><td>1</td><td>Torrent, Explosion</td></tr>
+                      <tr><td>Mâchoires Déchiq.</td><td>Mêlée</td><td>5</td><td>3+</td><td>8</td><td>-2</td><td>2</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve et arriver en dehors de la portée d'engagement ennemie.</li>
-                  <li><strong>Descente en Piqué :</strong> lors du tour où cette unité arrive depuis les réserves, elle peut tirer normalement.</li>
+                  <li><strong>Dévoration Psychique :</strong> chaque ennemi tué par le Psychophage au corps à corps lui rend 1 blessure (max. 1 par phase).</li>
+                  <li><strong>Torrent :</strong> touche automatiquement, pas de jet pour toucher nécessaire.</li>
                 </ul>
               </div>
 
+              <!-- Bondisseurs de Von Ryan -->
               <div class="unit-card tyranids-unit">
                 <div class="unit-header">
-                  <h4>Bondisseurs de Von Ryan <span class="unit-role">ÉLITES — 3 figurines</span></h4>
+                  <h4>Bondisseurs de Von Ryan <span class="unit-role">ÉLITES — 3 fig.</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>10"</td><td>4</td><td>4+</td><td>2</td><td>8+</td><td>1</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Serres du Bondisseur</td><td>Mêlée</td><td>—</td><td>4</td><td>3+</td><td>5</td><td>-2</td><td>1</td><td>Déchirement</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>10"</td><td>4</td><td>4+</td><td>2</td><td>8+</td><td>1</td></tr></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Serres du Bondisseur</td><td>Mêlée</td><td>4</td><td>3+</td><td>5</td><td>-2</td><td>1</td><td>Déchirement</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve.</li>
-                  <li><strong>Bond Prédateur :</strong> lors du tour où cette unité arrive depuis les réserves, elle peut déclarer une charge.</li>
-                  <li><strong>Discrétion :</strong> les attaques à longue portée (plus de 12") subissent un malus de -1 pour toucher cette unité.</li>
+                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve et arriver depuis n'importe quel bord de table.</li>
+                  <li><strong>Bond Prédateur :</strong> peut charger le tour où il arrive depuis les réserves.</li>
+                  <li><strong>Discrétion :</strong> -1 pour toucher cette unité à plus de 12".</li>
                 </ul>
               </div>
 
+              <!-- Termagants -->
               <div class="unit-card tyranids-unit">
                 <div class="unit-header">
-                  <h4>Barbgaunts <span class="unit-role">SOUTIEN — 6 figurines</span></h4>
+                  <h4>Termagants <span class="unit-role">TROUPES — 20 fig.</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>5"</td><td>4</td><td>4+</td><td>1</td><td>8+</td><td>1</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Étrangleur Barbelé</td><td>Tir</td><td>18"</td><td>1</td><td>4+</td><td>5</td><td>-1</td><td>1</td><td>Explosion</td></tr>
-                    <tr><td>Griffes et Crocs</td><td>Mêlée</td><td>—</td><td>1</td><td>4+</td><td>4</td><td>0</td><td>1</td><td>—</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>6"</td><td>3</td><td>5+</td><td>1</td><td>8+</td><td>2</td></tr></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Fusil-Chair</td><td>12"</td><td>1</td><td>4+</td><td>4</td><td>0</td><td>1</td><td>Tir</td></tr>
+                      <tr><td>Morsures et Griffes</td><td>Mêlée</td><td>1</td><td>4+</td><td>3</td><td>0</td><td>1</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Explosion :</strong> si le jet pour toucher est un 6 non modifié, cette attaque touche tous les modèles à 2" de la cible.</li>
-                  <li><strong>Symbionte :</strong> cette unité doit rester à 6" du Parasite de Mortrex pour conserver ses bonus de commandement.</li>
+                  <li><strong>Essaim Prolifique :</strong> si l'unité compte 11 figurines ou plus, elle gagne +1 OC.</li>
+                  <li><strong>Synergie :</strong> à 6" du Primat Tyranide, peut relancer les jets pour blesser de 1.</li>
+                </ul>
+              </div>
+
+              <!-- Nuées de Voraces -->
+              <div class="unit-card tyranids-unit">
+                <div class="unit-header">
+                  <h4>Nuées de Voraces <span class="unit-role">TROUPES — 2 unités</span></h4>
+                </div>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>5"</td><td>3</td><td>6+</td><td>3</td><td>8+</td><td>2</td></tr></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Mandibules Voraces</td><td>Mêlée</td><td>6</td><td>4+</td><td>3</td><td>0</td><td>1</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ul class="abilities">
+                  <li><strong>Nuée :</strong> ignore les terrains difficiles lors du mouvement.</li>
+                  <li><strong>Prolifération :</strong> peut être placé en réserve stratégique sans coût de points de commandement.</li>
                 </ul>
               </div>
 
             </div>
           </details>
 
+          <!-- ===== SPACE MARINES ===== -->
           <details class="patrol marines-patrol">
             <summary>
               <span class="patrol-icon">🛡️</span>
@@ -131,97 +180,117 @@
 
               <div class="patrol-rule">
                 <h3>Règle de Détachement : Astartes de Fer</h3>
-                <p>Les unités Space Marines de cette patrouille bénéficient de <strong>Discipline Adamantine</strong> : les jets de moral sont automatiquement réussis. De plus, une fois par tour, le Capitaine peut utiliser <strong>Ordre de Combat</strong> pour permettre à une unité amie à 6" de relancer tous ses jets pour toucher.</p>
+                <p>Les unités Space Marines bénéficient de <strong>Discipline Adamantine</strong> : jets de moral automatiquement réussis. Le Capitaine peut utiliser <strong>Ordre de Combat</strong> une fois par tour pour permettre à une unité amie à 6" de relancer tous ses jets pour toucher.</p>
               </div>
 
               <h3 class="roster-title">Liste d'Armée</h3>
 
+              <!-- Capitaine en Armure Terminator -->
               <div class="unit-card marines-unit">
                 <div class="unit-header">
-                  <h4>Capitaine Primaris <span class="unit-role">QG</span></h4>
+                  <h4>Capitaine en Armure Terminator <span class="unit-role">QG</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>6"</td><td>4</td><td>3+</td><td>5</td><td>6+</td><td>1</td></tr></tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>5"</td><td>5</td><td>2+</td><td>6</td><td>6+</td><td>1</td></tr></tbody>
+                  </table>
+                </div>
                 <p class="invu">Sauvegarde Invulnérable : <strong>4+</strong></p>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Pistolet Bolter</td><td>Tir</td><td>12"</td><td>1</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Pistolet</td></tr>
-                    <tr><td>Bolter Auto Maîtrisé</td><td>Tir</td><td>24"</td><td>2</td><td>3+</td><td>4</td><td>-1</td><td>2</td><td>Maîtrisé</td></tr>
-                    <tr><td>Arme de Corps à Corps</td><td>Mêlée</td><td>—</td><td>5</td><td>2+</td><td>4</td><td>-1</td><td>2</td><td>—</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Storm Bolter</td><td>24"</td><td>2</td><td>2+</td><td>4</td><td>0</td><td>1</td><td>Tir Rapide 2</td></tr>
+                      <tr><td>Poing Énergétique</td><td>Mêlée</td><td>5</td><td>2+</td><td>8</td><td>-2</td><td>2</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Officier :</strong> une fois par phase, peut donner un ordre à une unité INFANTERIE amie à 6" pour lui permettre de relancer ses jets pour toucher de 1.</li>
-                  <li><strong>Bouclier de la Foi :</strong> ce modèle peut relancer ses jets de sauvegarde invulnérable de 1.</li>
-                  <li><strong>Porte-étendard :</strong> les unités amies à 6" bénéficient de +1 en Commandement.</li>
+                  <li><strong>Officier :</strong> une fois par phase, donne un ordre à une unité INFANTERIE amie à 6" pour relancer ses jets pour toucher de 1.</li>
+                  <li><strong>Frappe Précise :</strong> les blessures non modifiées de 6 ignorent les sauvegardes invulnérables.</li>
+                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve avec ses Terminators.</li>
                 </ul>
               </div>
 
+              <!-- Terminators -->
               <div class="unit-card marines-unit">
                 <div class="unit-header">
-                  <h4>Intercesseurs <span class="unit-role">TROUPES — 5 figurines</span></h4>
+                  <h4>Terminators <span class="unit-role">ÉLITES — 5 fig.</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>6"</td><td>4</td><td>3+</td><td>2</td><td>6+</td><td>2</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Bolter en Rafale</td><td>Tir</td><td>30"</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Tir Rapide 1</td></tr>
-                    <tr><td>Pistolet Bolter</td><td>Tir</td><td>12"</td><td>1</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Pistolet</td></tr>
-                    <tr><td>Arme de Corps à Corps</td><td>Mêlée</td><td>—</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>—</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>5"</td><td>5</td><td>2+</td><td>3</td><td>6+</td><td>1</td></tr></tbody>
+                  </table>
+                </div>
+                <p class="invu">Sauvegarde Invulnérable : <strong>4+</strong></p>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Storm Bolter</td><td>24"</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Tir Rapide 2</td></tr>
+                      <tr><td>Poing Énergétique</td><td>Mêlée</td><td>3</td><td>3+</td><td>8</td><td>-2</td><td>2</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Tir Rapide 1 :</strong> si cette unité n'a pas bougé ce tour, elle gagne +1 attaque avec le Bolter en Rafale.</li>
-                  <li><strong>Cohésion de Escouade :</strong> tant que l'unité est complète, elle peut relancer ses jets de moral.</li>
+                  <li><strong>Frappe en Profondeur :</strong> peut arriver depuis les réserves n'importe où sur la table à plus de 9" des ennemis.</li>
+                  <li><strong>Armure Terminator :</strong> sauvegarde invulnérable 4+ incluse dans le profil.</li>
                 </ul>
               </div>
 
+              <!-- Marines Infernus -->
               <div class="unit-card marines-unit">
                 <div class="unit-header">
-                  <h4>Cavaliers <span class="unit-role">ATTAQUE RAPIDE — 3 figurines</span></h4>
+                  <h4>Marines Infernus <span class="unit-role">TROUPES — 5 fig.</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>14"</td><td>5</td><td>3+</td><td>3</td><td>6+</td><td>2</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Bolter Jumelé</td><td>Tir</td><td>24"</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Jumelé</td></tr>
-                    <tr><td>Tronçonneuse</td><td>Mêlée</td><td>—</td><td>3</td><td>3+</td><td>4</td><td>-1</td><td>1</td><td>—</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>6"</td><td>4</td><td>3+</td><td>2</td><td>6+</td><td>2</td></tr></tbody>
+                  </table>
+                </div>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Pyreblaster</td><td>12"</td><td>D6</td><td>—</td><td>5</td><td>-1</td><td>1</td><td>Torrent, Assaut</td></tr>
+                      <tr><td>Pistolet Bolter</td><td>12"</td><td>1</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Pistolet</td></tr>
+                      <tr><td>Arme C.à.C.</td><td>Mêlée</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>—</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Assaut :</strong> peut tirer après avoir Avancé, mais subit un malus de -1 pour toucher.</li>
-                  <li><strong>Selle Renforcée :</strong> ignore les terrains difficiles lors du mouvement normal.</li>
+                  <li><strong>Torrent :</strong> le Pyreblaster touche automatiquement, pas de jet pour toucher.</li>
+                  <li><strong>Assaut :</strong> peut tirer le Pyreblaster même après avoir Avancé.</li>
                 </ul>
               </div>
 
+              <!-- Archiviste en Armure Terminator -->
               <div class="unit-card marines-unit">
                 <div class="unit-header">
-                  <h4>Servo-tourelle Firestrike <span class="unit-role">SOUTIEN</span></h4>
+                  <h4>Archiviste en Armure Terminator <span class="unit-role">QG</span></h4>
                 </div>
-                <table class="stat-table">
-                  <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
-                  <tbody><tr><td>0"</td><td>6</td><td>3+</td><td>8</td><td>6+</td><td>0</td></tr></tbody>
-                </table>
-                <table class="weapon-table">
-                  <thead><tr><th>Arme</th><th>Type</th><th>Portée</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
-                  <tbody>
-                    <tr><td>Canon à Tir Rapide Jumelé</td><td>Tir</td><td>48"</td><td>4</td><td>3+</td><td>8</td><td>-2</td><td>3</td><td>Lourde</td></tr>
-                    <tr><td>Lance-missiles Jumelé</td><td>Tir</td><td>48"</td><td>2</td><td>3+</td><td>10</td><td>-2</td><td>D6+3</td><td>Lourde, Dévastateur</td></tr>
-                  </tbody>
-                </table>
+                <div class="table-wrap">
+                  <table class="stat-table">
+                    <thead><tr><th>M</th><th>E</th><th>Svg</th><th>B</th><th>Cd</th><th>OC</th></tr></thead>
+                    <tbody><tr><td>5"</td><td>5</td><td>2+</td><td>5</td><td>6+</td><td>1</td></tr></tbody>
+                  </table>
+                </div>
+                <p class="invu">Sauvegarde Invulnérable : <strong>4+</strong></p>
+                <div class="table-wrap">
+                  <table class="weapon-table">
+                    <thead><tr><th>Arme</th><th>Port.</th><th>A</th><th>CC/CB</th><th>F</th><th>PA</th><th>D</th><th>Capacités</th></tr></thead>
+                    <tbody>
+                      <tr><td>Storm Bolter</td><td>24"</td><td>2</td><td>3+</td><td>4</td><td>0</td><td>1</td><td>Tir Rapide 2</td></tr>
+                      <tr><td>Bâton de Force</td><td>Mêlée</td><td>4</td><td>3+</td><td>6</td><td>-1</td><td>D3</td><td>Psychique</td></tr>
+                    </tbody>
+                  </table>
+                </div>
                 <ul class="abilities">
-                  <li><strong>Immobile :</strong> cette unité ne peut pas se déplacer. Elle peut choisir l'une ou l'autre de ses armes à chaque phase de tir.</li>
-                  <li><strong>Lourde :</strong> si cette unité n'a pas bougé ce tour, elle gagne +1 pour toucher.</li>
-                  <li><strong>Dévastateur :</strong> les touches non modifiées de 6 infligent des blessures mortelles supplémentaires égales à la valeur de Dommages.</li>
+                  <li><strong>Psyker :</strong> peut lancer 1 pouvoir psychique par tour. Accès à Smite et Vortex de Feu (blessures mortelles D3 à une unité à 18").</li>
+                  <li><strong>Frappe en Profondeur :</strong> peut être déployé en réserve avec les Terminators.</li>
                 </ul>
               </div>
 

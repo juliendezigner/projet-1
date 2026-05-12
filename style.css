@@ -294,19 +294,28 @@ tr:last-child td {
 .tyranids-unit .unit-role { background: #3a0a4a; color: #c87ad8; }
 .marines-unit  .unit-role { background: #0a2a4a; color: #7aaad8; }
 
+/* Table scroll wrapper */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 0.6rem;
+  border-radius: 2px;
+}
+
 /* Stat & weapon tables */
 .stat-table, .weapon-table {
   width: 100%;
+  min-width: max-content;
   border-collapse: collapse;
-  font-size: 0.85rem;
-  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
 }
 
 .stat-table th, .weapon-table th {
-  padding: 0.35rem 0.6rem;
+  padding: 0.3rem 0.5rem;
   text-align: center;
-  font-size: 0.78rem;
-  letter-spacing: 0.5px;
+  font-size: 0.72rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 .tyranids-unit .stat-table th,
@@ -315,10 +324,11 @@ tr:last-child td {
 .marines-unit  .weapon-table th { background: #0a1a3a; color: #7aaad8; }
 
 .stat-table td, .weapon-table td {
-  padding: 0.35rem 0.6rem;
+  padding: 0.28rem 0.5rem;
   text-align: center;
   border-bottom: 1px solid #2a1a3a;
   color: #c8b090;
+  white-space: nowrap;
 }
 
 .weapon-table td:first-child { text-align: left; font-style: italic; }
